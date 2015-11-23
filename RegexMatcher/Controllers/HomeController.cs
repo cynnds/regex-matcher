@@ -26,12 +26,5 @@ namespace RegexMatcher.Controllers
 
             return View();
         }
-
-        public ActionResult Regex()
-        {
-            ViewBag.Message = "Regex matcher.";
-
-            return View();
-        }
     }
 }

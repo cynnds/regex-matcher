@@ -8,6 +8,8 @@ namespace RegexMatcher.Models
         [DisplayName("String")]
         public string stringToMatch { get; set; }
 
-        public string inputRegex { get; set; }        
+        public string regex { get; set; }    
+        
+        public string output { get; set; }    
     }
 }

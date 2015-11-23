@@ -1,0 +1,29 @@
+﻿@model RegexMatcher.Models.RegexModels
+@{
+    ViewBag.Title = "Regex";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="well">
+        <div class="form-group">
+            @Html.LabelFor(model => model.stringToMatch)
+            @Html.TextAreaFor(model => model.stringToMatch, new {@class = "form-control"})
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.regex, "Regex")<br/>
+            @Html.EditorFor(model => model.regex)
+        </div>
+
+        <button type="submit" class="btn btn-primary">Match</button>
+    </div>
+
+    <div class="well">
+        <div class="output">
+            @Html.TextAreaFor(model => model.output, new { @class = "form-control" })
+        </div>
+    </div>
+}
+
+
